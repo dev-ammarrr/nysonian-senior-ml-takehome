@@ -1,0 +1,92 @@
+# --- Secrets / local config ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets.json
+
+# --- Virtual environments ---
+venv/
+.venv/
+env/
+ENV/
+**/venv/
+**/.venv/
+
+# Symlinked venvs / env from sibling folders
+A2_silent_failures/venv
+A2_silent_failures/.env
+B1_spot_training/venv
+C1_exactly_once/venv
+C1_exactly_once/.env
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+.eggs/
+dist/
+build/
+pip-wheel-metadata/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.cache/
+
+# --- ML / runtime artifacts ---
+checkpoints/
+*.ckpt
+*.ckpt.*
+*.npz
+*.pt
+*.bin
+*.onnx
+*.h5
+*.pkl
+*.joblib
+models/
+runs/
+wandb/
+mlruns/
+lightning_logs/
+
+# --- Generated reports / logs (keep source data like mock_messages.json) ---
+detection_report.json
+measurement_report.json
+decision_log.json
+*.log
+logs/
+
+# --- Editors / OS ---
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Local DBs / temp ---
+*.db
+*.sqlite
+*.sqlite3
+tmp/
+temp/
+*.tmp

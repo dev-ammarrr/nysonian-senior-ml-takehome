@@ -1,0 +1,6 @@
+checkpoints/
+*.ckpt.npz
+*.json
+!README.md
+__pycache__/
+.DS_Store

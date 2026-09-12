@@ -1,0 +1,128 @@
+[
+  {
+    "id": "msg_001",
+    "message": "The package arrived completely crushed. The item inside is shattered.",
+    "expected_tool": "refund_damaged_on_arrival",
+    "difficulty": "easy"
+  },
+  {
+    "id": "msg_002",
+    "message": "I've been using this for 3 months and it just stopped working.",
+    "expected_tool": "warranty_claim",
+    "difficulty": "easy"
+  },
+  {
+    "id": "msg_003",
+    "message": "This is not what I ordered. You sent me a blue one but I ordered red.",
+    "expected_tool": "return_wrong_item",
+    "difficulty": "easy"
+  },
+  {
+    "id": "msg_004",
+    "message": "I accidentally dropped it and now the screen is cracked. Is this covered?",
+    "expected_tool": "decline_customer_damage",
+    "difficulty": "medium"
+  },
+  {
+    "id": "msg_005",
+    "message": "I need this replaced urgently. Can you send another one right away?",
+    "expected_tool": "warehouse_replacement",
+    "difficulty": "medium"
+  },
+  {
+    "id": "msg_006",
+    "message": "This is unacceptable. I want to speak to your manager immediately.",
+    "expected_tool": "escalate_to_specialist",
+    "difficulty": "easy"
+  },
+  {
+    "id": "msg_007",
+    "message": "The item broke after I used it once. It seems defective.",
+    "expected_tool": "warranty_claim",
+    "difficulty": "medium",
+    "ambiguity": "Could be DOA or warranty, depends on 'after I used it once'"
+  },
+  {
+    "id": "msg_008",
+    "message": "When I opened the box, I noticed the item was already damaged.",
+    "expected_tool": "refund_damaged_on_arrival",
+    "difficulty": "easy"
+  },
+  {
+    "id": "msg_009",
+    "message": "The product stopped working. I bought it 2 weeks ago.",
+    "expected_tool": "warranty_claim",
+    "difficulty": "medium",
+    "ambiguity": "Could be DOA or early warranty failure"
+  },
+  {
+    "id": "msg_010",
+    "message": "I received someone else's order. This has items I never ordered.",
+    "expected_tool": "return_wrong_item",
+    "difficulty": "easy"
+  },
+  {
+    "id": "msg_011",
+    "message": "The item was working fine but then I spilled water on it and it broke.",
+    "expected_tool": "decline_customer_damage",
+    "difficulty": "easy"
+  },
+  {
+    "id": "msg_012",
+    "message": "I'm extremely disappointed. I will be contacting my lawyer about this.",
+    "expected_tool": "escalate_to_specialist",
+    "difficulty": "easy"
+  },
+  {
+    "id": "msg_013",
+    "message": "It arrived broken, but I'm not sure if it was broken in the box or during shipping.",
+    "expected_tool": "refund_damaged_on_arrival",
+    "difficulty": "hard",
+    "ambiguity": "Uncertainty about when damage occurred"
+  },
+  {
+    "id": "msg_014",
+    "message": "The item is not broken but it's not what was shown in the picture on your website.",
+    "expected_tool": "return_wrong_item",
+    "difficulty": "medium",
+    "ambiguity": "Misleading description vs wrong item"
+  },
+  {
+    "id": "msg_015",
+    "message": "It broke and I need a replacement ASAP. This is urgent.",
+    "expected_tool": "warranty_claim",
+    "difficulty": "hard",
+    "ambiguity": "Broke when? Urgency suggests warehouse replacement but need to verify"
+  },
+  {
+    "id": "msg_016",
+    "message": "The packaging was fine but the item doesn't work at all.",
+    "expected_tool": "warranty_claim",
+    "difficulty": "medium",
+    "ambiguity": "DOA or defective? Packaging OK suggests manufacturing defect"
+  },
+  {
+    "id": "msg_017",
+    "message": "I tried to fix it myself and now it's completely broken.",
+    "expected_tool": "decline_customer_damage",
+    "difficulty": "easy"
+  },
+  {
+    "id": "msg_018",
+    "message": "This is the third time this has happened. I'm filing a complaint with consumer protection.",
+    "expected_tool": "escalate_to_specialist",
+    "difficulty": "easy"
+  },
+  {
+    "id": "msg_019",
+    "message": "The delivery driver dropped the package and I saw it hit the ground hard. Inside, the item is broken.",
+    "expected_tool": "refund_damaged_on_arrival",
+    "difficulty": "easy"
+  },
+  {
+    "id": "msg_020",
+    "message": "I need this fixed or replaced. It's still under warranty I think.",
+    "expected_tool": "warranty_claim",
+    "difficulty": "medium"
+  }
+]
